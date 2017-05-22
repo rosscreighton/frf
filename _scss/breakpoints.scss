@@ -1,0 +1,17 @@
+// breakpoints
+$bp-sm: 540px;
+$bp-md: 720px;
+$bp-lg: 960px;
+$bp-xl: 1140px;
+
+@mixin bp-md-min() {
+  @media (min-width: $bp-md) {
+    @content;
+  }
+}
+
+@mixin bp-lg-min() {
+  @media (min-width: $bp-lg) {
+    @content;
+  }
+}

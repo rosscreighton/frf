@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $garamond;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0px;
+}
+
+a { text-decoration: none; }
+
+a:hover {
+  cursor: pointer;
+}
+
+a:visited {
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+// utility classes
+.frf-button {
+  display: inline-block;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 300px;
+  background-color: $jungle-green;
+  color: white;
+  font-size: 13px;
+  font-family: $montserrat;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include bp-md-min() {
+    font-size: 15px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.content-heading {
+  font-size: 30px;
+  letter-spacing: 1px;
+
+  @include bp-md-min() {
+    font-size: 49px;
+  }
+}
+
+.content-subheading {
+  display: block;
+  font-family: $montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $night-rider;
+}
