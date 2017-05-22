@@ -6,15 +6,15 @@ title: For Real Food
 <head>
   <title>{{ site.title }}</title>
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i|Montserrat:600,700" rel="stylesheet">
-  <link rel="stylesheet" href="{{ site.baseurl }}css/styles.css">
+  <link rel="stylesheet" href="{{ site.github.url }}/css/styles.css">
 </head>
 <body>
   {{ content }}
   <div class="footer">
-    <a href="{% link products.html %}">All Products</a>
+    <a href="{{ site.github.url }}/{% link products.html %}">All Products</a>
     <a href="mailto:grow@ForRealFood.co">grow@ForRealFood.co</a>
     <a href="https://www.facebook.com/Grow4RealFood/">
-      <img src="{{ site.url }}/assets/img/icon-facebook-small.png" alt="our facebook page">
+      <img src="{{ site.github.url }}/assets/img/icon-facebook-small.png" alt="our facebook page">
     </a>
   </div>
   <div class="bookend">

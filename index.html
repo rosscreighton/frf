@@ -2,15 +2,15 @@
 layout: landing
 ---
 
-<div class="home__hero">
-  <a href="{{ site.url }}/" class="home__hero__logo">FOR REAL FOOD</a>
+<div class="home__hero" style="background-image: url('{{ site.github.url }}/assets/img/header.jpg');">
+  <a href="{{ site.github.url }}/" class="home__hero__logo">FOR REAL FOOD</a>
   <div class="home__hero__overlay"></div>
   <div class="home__hero__text">
     <div class="home__hero__text__cta-1">Learn to Grow Real Food</div>
     <div class="home__hero__text__cta-2">
       <strong>ONE STEP AT A TIME</strong>
     </div>
-    <a href="{% link level_one.html %}" class="frf-button home__hero__button">GET STARTED</a>
+    <a href="{{ site.github.url }}/{% link level_one.html %}" class="frf-button home__hero__button">GET STARTED</a>
   </div>
 </div>
 <div class="home__content">
@@ -18,7 +18,7 @@ layout: landing
     <div class="content-heading">
       How It Works
     </div>
-    <img src="{{ site.url }}/assets/img/levels.png" alt="diagram explaining the levels in our program">
+    <img src="{{ site.github.url }}/assets/img/levels.png" alt="diagram explaining the levels in our program">
     <p>
       For Real Food teaches you to grow real food, one step at a time, in the comfort of your own home. We'll deliver a series of fun growing challenges that will incrementally teach you the fundamentals of growing your own food. By the end of the series, you will have the knowledge and confidence to continue growing plants in your daily life.
     </p>
@@ -27,7 +27,7 @@ layout: landing
     <div class="content-heading">
       What You Get
     </div>
-    <img src="{{ site.url }}/assets/img/included.png" alt="diagram explaining what is included with purchase">
+    <img src="{{ site.github.url }}/assets/img/included.png" alt="diagram explaining what is included with purchase">
     <p>
       Each growing challenge contains a growing tool kit with all the essential ingredients to get started.  This tool kit is delivered to your door - just add water and a sunny window.  Each kit comes with step by step instructions that take you through the learning process. We'll track your progress, unlocks new challenges, and send you tips and tricks as you progress.
     </p>
@@ -55,6 +55,6 @@ layout: landing
     </div>
   </div>
   <div class="home__content__section">
-    <a href="{% link level_one.html %}" class="frf-button">SIGN UP FOR LEVEL 1</a>
+    <a href="{{ site.github.url }}{% link level_one.html %}" class="frf-button">SIGN UP FOR LEVEL 1</a>
   </div>
 </div>
