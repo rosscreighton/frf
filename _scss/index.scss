@@ -120,5 +120,15 @@ $hero-height-md: 725px;
 }
 
 .home__content__section--get-started {
-  img { width: 105px; }
+  > img { width: 105px; }
+}
+
+.home__content__section--get-started__product_previews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include bp-md-min() {
+    flex-direction: row;
+  }
 }

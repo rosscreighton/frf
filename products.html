@@ -2,5 +2,8 @@
 layout: products
 ---
 
-{% include product_preview.html href="" title="Level 1 - Sparking Life : Sprouts" img_url="/assets/img/sprouts.jpg" price="10.00" %}
-{% include product_preview.html href="" title="Level 2 - Sparking Life : Microgreens" img_url="/assets/img/microgreens.jpg" price="10.00" %}
+{% capture level_one_href %}{% link level_one.html %}{% endcapture %}
+{% capture level_two_href %}{% link level_two.html %}{% endcapture %}
+
+{% include product_preview.html href=level_one_href title="Level 1 - Sparking Life : Sprouts" img_url="/assets/img/sprouts.jpg" price="10.00" %}
+{% include product_preview.html href=level_two_href title="Level 2 - Sparking Life : Microgreens" img_url="/assets/img/microgreens.jpg" price="10.00" %}
