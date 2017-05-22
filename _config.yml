@@ -6,11 +6,6 @@ defaults:
 
 permalink:           pretty
 
-# Setup
-title:               For Real Food
-tagline:             Learn to grow real food. One step at a time.
-baseurl:             /
-
 sass:
   sass_dir:          _scss
   style:            :compressed
