@@ -9,7 +9,7 @@ permalink:           pretty
 # Setup
 title:               For Real Food
 tagline:             Learn to grow real food. One step at a time.
-baseurl:             https://rosscreighton.github.io/frf/
+baseurl:             /
 
 sass:
   sass_dir:          _scss

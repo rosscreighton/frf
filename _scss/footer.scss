@@ -3,19 +3,9 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 170px;
+  height: 260px;
   margin-top: $gutter-xl;
   background-color: $mine-shaft;
 
   a { color: $silver; }
 }
-
-.bookend {
-  height: 40px;
-  background-color: $acadia;
-
-  @include bp-md-min() {
-    height: 130px;
-  }
-}
-

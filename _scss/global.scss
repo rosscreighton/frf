@@ -3,10 +3,11 @@ html {
 }
 
 body {
-  font-family: $garamond;
-  font-weight: 400;
+  font-family: $montserrat;
+  font-weight: 300;
   font-size: 18px;
   margin: 0px;
+  color: $dim-gray;
 }
 
 a { text-decoration: none; }
@@ -49,8 +50,9 @@ img {
 }
 
 .content-heading {
+  color: $night-rider;
+  font-weight: 400;
   font-size: 30px;
-  letter-spacing: 1px;
 
   @include bp-md-min() {
     font-size: 49px;
