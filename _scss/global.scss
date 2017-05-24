@@ -1,4 +1,4 @@
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -8,6 +8,10 @@ body {
   font-size: 18px;
   margin: 0px;
   color: $dim-gray;
+}
+
+.container {
+  padding-top: $navbar-height-mobile;
 }
 
 a { text-decoration: none; }

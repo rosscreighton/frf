@@ -1,0 +1,13 @@
+<div class="navbar">
+  <div class="navbar__top">
+    <a href="{{ site.github.url }}{% link index.html %}" class="navbar__top__inner">
+      <img src="{{ site.github.url }}/assets/img/logo.png">
+      <span>FOR REAL FOOD</span>
+    </a>
+  </div>
+  <div class="navbar__menu">
+    <a href="{{ site.github.url }}{% link products.html %}" class="{% if page.url == '/products/'%} active{% endif %}">PRODUCTS</a>
+    <a href="" class="{% if page.url == '/about/'%} active{% endif %}">ABOUT</a>
+    <a href="" class="{% if page.url == '/about/'%} active{% endif %}">FAQs</a>
+  </div>
+</div>
