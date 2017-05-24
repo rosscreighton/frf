@@ -51,10 +51,10 @@ layout: landing
     <img src="{{ site.github.url }}/assets/img/spork.png" alt="diagram explaining what is included with purchase">
     <div class="home__content__section--get-started__product_previews">
       {% assign level_one_product = site.products | where:"level", 1  | first %}
-      {% assign level_two_product = site.products | where:"level", 2  | first %}
+      {% assign intro_kit_product = site.products | where:"level", 0  | first %}
 
       {% include product_preview.html href=level_one_product.url title=level_one_product.title img_url=level_one_product.main_img_url price=level_one_product.price %}
-      {% include product_preview.html href=level_two_product.url title=level_two_product.title img_url=level_two_product.main_img_url price=level_two_product.price %}
+      {% include product_preview.html href=intro_kit_product.url title=intro_kit_product.title img_url=intro_kit_product.main_img_url price=intro_kit_product.price %}
     </div>
   </div>
 </div>
