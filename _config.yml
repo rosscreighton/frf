@@ -1,12 +1,17 @@
 defaults:
-  - scope:
-      path: "assets/img"
-    values:
-      image: true
+  scope:
+    path: "assets/img"
+  values:
+    image: true
 
 permalink:           pretty
 
 sass:
   sass_dir:          _scss
   style:            :compressed
+
+collections:
+  products:
+    output: true
+    permalink: /products/:path/
 

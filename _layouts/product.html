@@ -4,5 +4,30 @@ layout: base
 
 {% include header.html %}
 <div class="product__content">
-  {{ content }}
+  <div class="content-heading product__content__heading">
+    {{ page.title }}
+  </div>
+  <div class="product__content__columns">
+    <div class="product__content__column">
+      <div class="product__content__product-purchase">
+        <img src="{{ site.github.url }}{{ page.main_img_url }}" alt="{{ page.main_img_alt_text }}">
+        <div class="product__content__product-purchase__title">
+          {{ page.title }}
+        </div>
+        <div class="product__content__product-purchase__price">
+          ${{ page.price }}
+        </div>
+        <form class="product__content__product-purchase__form">
+          <div>Quantity:</div>
+          <input id="quantity" name="quantity" type="number" value="1">
+          <button type="submit" class="frf-button">Purchase</button>
+        </form>
+      </div>
+    </div>
+    <div class="product__content__column">
+      <div class="product__content__product-desc">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
 </div>

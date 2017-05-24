@@ -10,7 +10,8 @@ layout: landing
     <div class="home__hero__text__cta-2">
       <strong>ONE STEP AT A TIME</strong>
     </div>
-    <a href="{{ site.github.url }}{% link level_one.html %}" class="frf-button home__hero__button">GET STARTED</a>
+    {% assign level_one_product = site.products | where:"level", 1  | first %}
+    <a href="{{ site.github.url }}{{ level_one_product.url }}" class="frf-button home__hero__button">GET STARTED</a>
   </div>
 </div>
 <div class="home__content">
@@ -49,11 +50,11 @@ layout: landing
     </div>
     <img src="{{ site.github.url }}/assets/img/spork.png" alt="diagram explaining what is included with purchase">
     <div class="home__content__section--get-started__product_previews">
-      {% capture level_one_href %}{% link level_one.html %}{% endcapture %}
-      {% capture level_two_href %}{% link level_two.html %}{% endcapture %}
+      {% assign level_one_product = site.products | where:"level", 1  | first %}
+      {% assign level_two_product = site.products | where:"level", 2  | first %}
 
-      {% include product_preview.html href=level_one_href title="Level 1 - Sparking Life : Sprouts" img_url="/assets/img/sprouts.jpg" price="10.00" %}
-      {% include product_preview.html href=level_two_href title="Level 2 - Sparking Life : Microgreens" img_url="/assets/img/microgreens.jpg" price="10.00" %}
+      {% include product_preview.html href=level_one_product.url title=level_one_product.title img_url=level_one_product.main_img_url price=level_one_product.price %}
+      {% include product_preview.html href=level_two_product.url title=level_two_product.title img_url=level_two_product.main_img_url price=level_two_product.price %}
     </div>
   </div>
 </div>
