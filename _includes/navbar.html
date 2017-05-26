@@ -4,8 +4,13 @@
       <img src="{{ site.github.url }}/assets/img/logo.png">
       <span>FOR REAL FOOD</span>
     </a>
+    <div class="navbar__menu navbar__menu--desktop">
+      <a href="{{ site.github.url }}{% link products.html %}" class="{% if page.url == '/products/'%} active{% endif %}">PRODUCTS</a>
+      <a href="" class="{% if page.url == '/about/'%} active{% endif %}">ABOUT</a>
+      <a href="" class="{% if page.url == '/about/'%} active{% endif %}">FAQs</a>
+    </div>
   </div>
-  <div class="navbar__menu">
+  <div class="navbar__menu navbar__menu--mobile">
     <a href="{{ site.github.url }}{% link products.html %}" class="{% if page.url == '/products/'%} active{% endif %}">PRODUCTS</a>
     <a href="" class="{% if page.url == '/about/'%} active{% endif %}">ABOUT</a>
     <a href="" class="{% if page.url == '/about/'%} active{% endif %}">FAQs</a>
