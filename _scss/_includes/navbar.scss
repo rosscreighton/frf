@@ -49,6 +49,8 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    flex-grow: 1;
+    text-align: center;
 
     &.active {
       border-bottom: 2px solid $jungle-green;
