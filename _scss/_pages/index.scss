@@ -72,7 +72,7 @@
 
 .home__content__section {
   margin-top: $gutter-xl;
-  padding: 0 $gutter-sm;
+  padding: 0 $gutter-md;
   text-align: center;
 
   p, img {
@@ -85,9 +85,15 @@
   }
 
   p, ul {
-    font-size: 19px;
     text-align: left;
     line-height: 1.6em;
+  }
+
+  p { font-size: 19px; }
+
+  ul {
+    padding-left: 20px;
+    font-size: 18px;
   }
 }
 
