@@ -1,0 +1,21 @@
+.products {
+  padding: $gutter-md;
+  text-align: center;
+
+  @include bp-md-min() {
+    padding: $gutter-lg;
+  }
+}
+
+.products__content {
+  display: flex;
+  flex-direction: column;
+
+  @include bp-md-min() {
+    flex-direction: row;
+    .product-preview {
+      margin-right: $gutter-md;
+    }
+  }
+}
+

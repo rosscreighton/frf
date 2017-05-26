@@ -1,7 +1,11 @@
 ---
-layout: products
+layout: base
 ---
-
-{% for product in site.products %}
-  {% include product_preview.html href=product.url title=product.title img_url=product.main_img_url price=product.price %}
-{% endfor %}
+<div class="products">
+  <div class="content-heading">Our Products</div>
+  <div class="products__content">
+    {% for product in site.products %}
+      {% include product_preview.html href=product.url title=product.title img_url=product.main_img_url price=product.price %}
+    {% endfor %}
+  </div>
+</div>
