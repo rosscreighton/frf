@@ -2,6 +2,11 @@
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 $gutter-md;
+
+  @include bp-md-min() {
+    padding: 0;
+  }
 }
 
 .product__content__heading {
@@ -15,7 +20,6 @@
 
 .product__content__columns {
   display: flex;
-  padding: 0 $gutter-sm;
   flex-direction: column;
 
   @include bp-md-min() {
@@ -54,11 +58,17 @@
 .product__content__product-purchase__form {
   margin-top: $gutter-md;
 
+  label {
+    margin-right: $gutter-sm;
+  }
+
   input {
     margin-top: $gutter-sm;
     height: 30px;
     width: 60px;
     font-size: 18px;
+    border: 1px solid $dim-gray;
+    text-align: center;
   }
 
   button {
