@@ -50,7 +50,10 @@
 
 .navbar__menu {
   flex-direction: row;
-  color: white;
+
+  a, a:visited {
+    color: white;
+  }
 
   a {
     &.active {
