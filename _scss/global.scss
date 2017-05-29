@@ -14,7 +14,11 @@ body {
   padding-top: $navbar-height-mobile;
 }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
 
 a:hover {
   cursor: pointer;
