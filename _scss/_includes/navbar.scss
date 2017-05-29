@@ -2,7 +2,7 @@
   position: fixed;
   top: 0px;
   width: 100%;
-  height: $navbar-height-mobile;
+  height: $navbar-height;
   display: flex;
   flex-direction: column;
   background-color: $acadia;
@@ -14,10 +14,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: $navbar-height-mobile / 2 - 2.5;
+  height: $navbar-height / 2 - 2.5;
 
   @include bp-md-min() {
-    height: $navbar-height-mobile;
+    height: $navbar-height;
     justify-content: space-between;
     padding: 0 $gutter-lg;
   }
@@ -82,7 +82,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: $navbar-height-mobile / 2 + 2.5;
+  height: $navbar-height / 2 + 2.5;
   background-color: $night-rider;
   font-size: 14px;
   font-weight: 300;
