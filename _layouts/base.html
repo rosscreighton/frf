@@ -6,8 +6,8 @@ title: For Real Food
 <head>
   <title>For Real Food</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i|Montserrat:300,400, 500, 600,700">
-  <link rel="stylesheet" href="{{ site.github.url }}/css/styles.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i|Montserrat:300,400, 500, 600,700">
+  <link rel="preload" as="style" href="{{ site.github.url }}/css/styles.css">
 </head>
 <body>
   {% include navbar.html %}
@@ -15,5 +15,7 @@ title: For Real Food
   {{ content }}
   </div>
   {% include footer.html %}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500i|Montserrat:300,400, 500, 600,700">
+  <link rel="stylesheet" href="{{ site.github.url }}/css/styles.css">
 </body>
 </html>
