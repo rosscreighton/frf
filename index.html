@@ -10,7 +10,7 @@ layout: landing
       <strong>ONE STEP AT A TIME</strong>
     </div>
     {% assign level_one_product = site.products | where:"level", 1  | first %}
-    <a href="{{ site.github.url }}{{ level_one_product.url }}" class="frf-button home__hero__button">GET STARTED</a>
+    <a href="{{ site.github.url }}{{ level_one_product.url }}" class="btn btn-lg home__hero__button">try level 1</a>
   </div>
 </div>
 <div class="home__content">
@@ -52,14 +52,7 @@ layout: landing
       <div class="content-heading">
         Get Started
       </div>
-      <img src="{{ site.github.url }}/assets/img/spork.png" alt="diagram explaining what is included with purchase">
-      <div class="home__content__section__inner--get-started__product_previews">
-        {% assign level_one_product = site.products | where:"level", 1  | first %}
-        {% assign intro_kit_product = site.products | where:"level", 0  | first %}
-
-        {% include product_preview.html href=level_one_product.url title=level_one_product.title img_url=level_one_product.main_img_url price=level_one_product.price %}
-        {% include product_preview.html href=intro_kit_product.url title=intro_kit_product.title img_url=intro_kit_product.main_img_url price=intro_kit_product.price %}
-      </div>
+      <a href="{{ site.github.url }}{% link products.html %}" class="btn btn-lg">shop our kits</a>
     </div>
   </div>
 </div>

@@ -45,13 +45,11 @@
 }
 
 .home__hero__text__cta-2 {
-  margin-top: $gutter-sm;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.5em;
 
   @include bp-md-min() {
-    margin-top: $gutter-md;
     font-size: 64px;
   }
 }
@@ -80,7 +78,6 @@
   margin-right: auto;
   max-width: 780px;
   padding: 0 $gutter-md;
-  margin-top: $gutter-xl;
   text-align: center;
 
   p, img {
@@ -106,7 +103,16 @@
 }
 
 .home__content__section__inner--get-started {
-  > img { width: 105px; }
+  > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 105px;
+  }
+
+  .btn {
+    margin-top: $gutter-lg;
+  }
 }
 
 .home__content__section__inner--get-started__product_previews {

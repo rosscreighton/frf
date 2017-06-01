@@ -34,7 +34,7 @@ img {
 }
 
 // utility classes
-.frf-button {
+.btn {
   display: inline-block;
   padding: 16px 28px;
   border: none;
@@ -54,6 +54,20 @@ img {
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:visited {
+    color: white;
+  }
+}
+
+.btn-lg {
+  font-size: 20px;
+  padding: 16px 32px;
+
+  @include bp-md-min() {
+    font-size: 22px;
+    padding: 18px 38px;
   }
 }
 
