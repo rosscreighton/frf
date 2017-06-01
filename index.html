@@ -15,45 +15,51 @@ layout: landing
 </div>
 <div class="home__content">
   <div class="home__content__section">
-    <div class="content-heading">
-      How It Works
+    <div class="home__content__section__inner">
+      <div class="content-heading">
+        How It Works
+      </div>
+      <img src="{{ site.github.url }}/assets/img/levels.png" alt="diagram explaining the levels in our program">
+      <p>
+        For Real Food teaches you to grow real food, one step at a time, in the comfort of your own home.  We'll deliver a series of 5 fun growing challenges that will incrementally teach you the fundamentals of growing your own food. By the end of the series, you will have the knowledge and confidence to continue growing food in your daily life.
+      </p>
     </div>
-    <img src="{{ site.github.url }}/assets/img/levels.png" alt="diagram explaining the levels in our program">
-    <p>
-      For Real Food teaches you to grow real food, one step at a time, in the comfort of your own home.  We'll deliver a series of 5 fun growing challenges that will incrementally teach you the fundamentals of growing your own food. By the end of the series, you will have the knowledge and confidence to continue growing food in your daily life.
-    </p>
   </div>
   <div class="home__content__section">
-    <div class="content-heading">
-      What You Get
+    <div class="home__content__section__inner">
+      <div class="content-heading">
+        What You Get
+      </div>
+      <img src="{{ site.github.url }}/assets/img/included.png" alt="diagram explaining what is included with purchase">
+      <p>
+        The For Real Food Intro Kit has everything you need to get started growing your own real food.  Just add water and a sunny window! This kit includes:
+      </p>
+      <p>
+        <ul>
+          <li>Seeds for 4 different types of plants.</li>
+          <li>All the soil your plants could need.</li>
+          <li>Curated containers for each level.</li>
+          <li>Step by Step instructions to help you grow your green thumb.</li>
+          <li>An "Oops Kit", for those unexpected troubles.</li>
+          <li>Access to our ever-expanding video library and FAQs.</li>
+          <li>And a few surprises along the way!</li>
+        </ul>
+      </p>
     </div>
-    <img src="{{ site.github.url }}/assets/img/included.png" alt="diagram explaining what is included with purchase">
-    <p>
-      The For Real Food Intro Kit has everything you need to get started growing your own real food.  Just add water and a sunny window! This kit includes:
-    </p>
-    <p>
-      <ul>
-        <li>Seeds for 4 different types of plants.</li>
-        <li>All the soil your plants could need.</li>
-        <li>Curated containers for each level.</li>
-        <li>Step by Step instructions to help you grow your green thumb.</li>
-        <li>An "Oops Kit", for those unexpected troubles.</li>
-        <li>Access to our ever-expanding video library and FAQs.</li>
-        <li>And a few surprises along the way!</li>
-      </ul>
-    </p>
   </div>
-  <div class="home__content__section home__content__section--get-started">
-    <div class="content-heading">
-      Get Started
-    </div>
-    <img src="{{ site.github.url }}/assets/img/spork.png" alt="diagram explaining what is included with purchase">
-    <div class="home__content__section--get-started__product_previews">
-      {% assign level_one_product = site.products | where:"level", 1  | first %}
-      {% assign intro_kit_product = site.products | where:"level", 0  | first %}
+  <div class="home__content__section">
+    <div class="home__content__section__inner home__content__section__inner--get-started">
+      <div class="content-heading">
+        Get Started
+      </div>
+      <img src="{{ site.github.url }}/assets/img/spork.png" alt="diagram explaining what is included with purchase">
+      <div class="home__content__section__inner--get-started__product_previews">
+        {% assign level_one_product = site.products | where:"level", 1  | first %}
+        {% assign intro_kit_product = site.products | where:"level", 0  | first %}
 
-      {% include product_preview.html href=level_one_product.url title=level_one_product.title img_url=level_one_product.main_img_url price=level_one_product.price %}
-      {% include product_preview.html href=intro_kit_product.url title=intro_kit_product.title img_url=intro_kit_product.main_img_url price=intro_kit_product.price %}
+        {% include product_preview.html href=level_one_product.url title=level_one_product.title img_url=level_one_product.main_img_url price=level_one_product.price %}
+        {% include product_preview.html href=intro_kit_product.url title=intro_kit_product.title img_url=intro_kit_product.main_img_url price=intro_kit_product.price %}
+      </div>
     </div>
   </div>
 </div>
