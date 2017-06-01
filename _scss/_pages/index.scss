@@ -40,7 +40,7 @@
   line-height: 1.5em;
 
   @include bp-md-min() {
-    font-size: 61px;
+    font-size: 56px;
   }
 }
 
@@ -52,7 +52,7 @@
 
   @include bp-md-min() {
     margin-top: $gutter-md;
-    font-size: 68px;
+    font-size: 64px;
   }
 }
 
