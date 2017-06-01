@@ -69,10 +69,10 @@ GEM
       octokit (~> 4.0)
       public_suffix (~> 2.0)
       typhoeus (~> 0.7)
-    html-pipeline (2.5.0)
+    html-pipeline (2.6.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
-    i18n (0.8.1)
+    i18n (0.8.4)
     jekyll (3.4.3)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -193,7 +193,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
+  github-pages (= 138)
 
 BUNDLED WITH
    1.15.0
